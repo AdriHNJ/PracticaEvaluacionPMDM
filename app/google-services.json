@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "929030850461",
+    "project_id": "practicaevaluacionpmdm",
+    "storage_bucket": "practicaevaluacionpmdm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929030850461:android:9b6741a7b5f79f6fbad174",
+        "android_client_info": {
+          "package_name": "com.example.practicaevaluacionpmdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929030850461-n1eusapsrdsttcg51kab0isv8rniq833.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl5jTI7f-Ez0AbDR4DwGWqodPBxmpFfwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929030850461-n1eusapsrdsttcg51kab0isv8rniq833.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
