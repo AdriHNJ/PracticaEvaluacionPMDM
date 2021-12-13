@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PracticaEvaluacionPMDM</string>
+    <string name="acceder_como_invitado">Acceder como invitado</string>
+    <string name="registrar">Registrar</string>
+    <string name="acceder">Acceder</string>
+    <string name="correo">Correo</string>
+    <string name="constrase_a">Constraseña</string>
 </resources>
