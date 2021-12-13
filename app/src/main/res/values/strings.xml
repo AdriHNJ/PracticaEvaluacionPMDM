@@ -5,4 +5,6 @@
     <string name="acceder">Acceder</string>
     <string name="correo">Correo</string>
     <string name="constrase_a">Constraseña</string>
+    <string name="salir_de_la_app">salir de la app</string>
+    <string name="salir_del_navegador">salir del navegador</string>
 </resources>

@@ -37,23 +37,80 @@
         android:id="@+id/btn_logout"
         android:layout_width="138dp"
         android:layout_height="55dp"
-        android:layout_marginTop="584dp"
+        android:layout_marginTop="552dp"
         android:alpha="1"
-        android:backgroundTint="@color/color1"
+        android:backgroundTint="@color/ic_launcher_background"
         android:text="Logout"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_provider" />
+
+    <Button
+        android:id="@+id/btn_mapa2"
+        android:layout_width="233dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Base de datos"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_navegador" />
 
     <Button
         android:id="@+id/btn_navegador"
         android:layout_width="233dp"
         android:layout_height="50dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/color1"
         android:text="Navegador AG"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="47dp"
+        android:text="Explora tus páginas favoritas en el navegador AG"
+        android:textAlignment="center"
+        android:textColor="@color/color3"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mapa" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="77dp"
+        android:text="Busca tus destinos en el mapa personalizado de AG"
+        android:textAlignment="center"
+        android:textColor="@color/color3"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+    <Button
+        android:id="@+id/btn_mapa"
+        android:layout_width="233dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Adrian MAPS"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

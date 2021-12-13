@@ -10,6 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticaEvaluacionPMDM">
         <activity
+            android:name=".WebView.WebViewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <activity
+            android:name=".Maps.MapsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
             android:name=".AppActivity"
             android:exported="false" />
         <activity
