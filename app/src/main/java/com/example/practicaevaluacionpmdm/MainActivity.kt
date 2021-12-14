@@ -45,10 +45,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         prefs = Prefs(this)
         setUp()
-        comprobarSesion()
+        verificarSesion()
     }
 
-    private fun comprobarSesion() {
+    private fun verificarSesion() {
         val e= prefs.leerEmail()
         val p=prefs.leerProvider()
 
