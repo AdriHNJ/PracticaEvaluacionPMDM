@@ -46,6 +46,10 @@ class AppActivity : AppCompatActivity() {
             val i = Intent(this, WebViewActivity::class.java)
             startActivity(i)
         }
+        binding.btnMapa2.setOnClickListener {
+            val i = Intent(this, BaseActivity::class.java)
+            startActivity(i)
+        }
     }
 
     private fun cerrarSesion() {
