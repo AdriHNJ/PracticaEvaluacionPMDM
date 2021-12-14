@@ -17,6 +17,7 @@ enum class Providers{
 class AppActivity : AppCompatActivity() {
     var email=""
     var provider=""
+    var distancia = ""
     lateinit var prefs: Prefs
     lateinit var binding: ActivityAppBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +45,10 @@ class AppActivity : AppCompatActivity() {
         }
         binding.btnNavegador.setOnClickListener {
             val i = Intent(this, WebViewActivity::class.java)
+            startActivity(i)
+        }
+        binding.btnMapa2.setOnClickListener {
+            val i = Intent(this, BaseActivity::class.java)
             startActivity(i)
         }
     }
