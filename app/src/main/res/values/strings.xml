@@ -7,4 +7,11 @@
     <string name="constrase_a">Constraseña</string>
     <string name="salir_de_la_app">salir de la app</string>
     <string name="salir_del_navegador">salir del navegador</string>
+    <string name="text_boton_mapa">Busca tus destinos en el mapa personalizado de AG</string>
+    <string name="text_boton_navegador">Explora tus páginas favoritas en el navegador AG</string>
+    <string name="adrian_maps">Adrian MAPS</string>
+    <string name="navegador_ag">Navegador AG</string>
+    <string name="base_de_datos">Base de datos</string>
+    <string name="logout">Logout</string>
+    <string name="text_invitado">Usuario Invitado, regístrate para más funciones</string>
 </resources>

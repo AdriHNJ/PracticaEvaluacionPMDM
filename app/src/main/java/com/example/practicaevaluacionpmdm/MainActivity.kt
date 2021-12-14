@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var prefs: Prefs
     private val responseLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
-            if (it.resultCode== RESULT_OK){
+            if (it.resultCode == RESULT_OK){
                 val task = GoogleSignIn.getSignedInAccountFromIntent(it.data)
                 try {
                     val cuenta = task.getResult(ApiException::class.java)
@@ -68,6 +68,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnGoogle.setOnClickListener {
             accederConGoogle()
         }
+        binding.btnAccederInvitado.setOnClickListener {
+            accederInvitado()
+        }
     }
 
     private fun accederConGoogle() {
@@ -112,6 +115,22 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton("Aceptar", null)
             .create()
             .show()
+    }
+
+    private fun accederInvitado() {
+        FirebaseAuth.getInstance().signInAnonymously().addOnCompleteListener {
+            if (it.isSuccessful){
+                irAppInvitado(Providers1.INVITED)
+            }
+        }
+    }
+
+    private fun irAppInvitado(provider: Providers1) {
+        limpiar()
+        val i = Intent(this, InvitadoActivity::class.java).apply {
+            putExtra("PROVIDER", provider.name)
+        }
+        startActivity(i)
     }
 
     private fun irApp(email: String, provider: Providers) {
