@@ -20,6 +20,15 @@
             android:name=".UpdateDeleteActivity"
             android:exported="false" />
         <activity
+            android:name=".UpdateDeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false"/>
+        <activity
             android:name=".WebView.WebViewActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
