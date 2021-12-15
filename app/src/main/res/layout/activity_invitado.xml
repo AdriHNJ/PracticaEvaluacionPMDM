@@ -26,7 +26,7 @@
         android:layout_width="83dp"
         android:layout_height="48dp"
         android:background="@color/white"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -51,68 +51,45 @@
 
     <Button
         android:id="@+id/btn_mapa2"
-        android:layout_width="233dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="254dp"
+        android:layout_height="57dp"
         android:backgroundTint="@color/purple_500"
-        android:text="@string/base_de_datos"
+        android:text="@string/buscador_de_im_genes_ag"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_navegador" />
-
-    <Button
-        android:id="@+id/btn_navegador"
-        android:layout_width="233dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/color1"
-        android:text="@string/navegador_ag"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="47dp"
-        android:text="@string/text_boton_navegador"
+        android:layout_width="375dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="192dp"
+        android:text="@string/text_buscaimagenes"
         android:textAlignment="center"
-        android:textColor="@color/color3"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_mapa" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="77dp"
-        android:text="@string/text_boton_mapa"
-        android:textAlignment="center"
-        android:textColor="@color/color3"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_email" />
 
-    <Button
-        android:id="@+id/btn_mapa"
-        android:layout_width="233dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/purple_200"
-        android:text="@string/adrian_maps"
-        android:textColor="@color/white"
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="375dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="192dp"
+        android:text="@string/text_buscaimagenes"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

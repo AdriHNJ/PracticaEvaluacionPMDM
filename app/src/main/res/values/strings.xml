@@ -14,4 +14,13 @@
     <string name="base_de_datos">Base de datos</string>
     <string name="logout">Logout</string>
     <string name="text_invitado">Usuario Invitado, regístrate para más funciones</string>
+    <string name="volver">Volver</string>
+    <string name="borrar">Borrar</string>
+    <string name="update">Update</string>
+    <string name="origen">Origen:</string>
+    <string name="destino">Destino:</string>
+    <string name="distancia_km">Distancia(KM):</string>
+    <string name="buscador_de_im_genes_ag">Buscador de Imágenes AG</string>
+    <string name="text_buscaimagenes">No tienes acceso a las características principales, pero puedes buscar imágenes en el buscador</string>
+    <string name="textview">TextView</string>
 </resources>
