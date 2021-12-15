@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.practicaevaluacionpmdm">
+    package="com.example.practicaevaluacionpmdm" >
 
     <application
         android:name=".BaseDatos.Aplicacion"
@@ -9,7 +9,13 @@
         android:label="@string/base_de_datos"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PracticaEvaluacionPMDM">
+        android:theme="@style/Theme.PracticaEvaluacionPMDM" >
+        <activity
+            android:name=".recyclerImagenes.PixabayAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".PixabayActivity"
+            android:exported="false" />
         <activity
             android:name=".BaseActivity"
             android:exported="false" />
@@ -35,15 +41,15 @@
         <activity
             android:name=".AppActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".InvitadoActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/SplashThemes">
+            android:theme="@style/SplashThemes" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

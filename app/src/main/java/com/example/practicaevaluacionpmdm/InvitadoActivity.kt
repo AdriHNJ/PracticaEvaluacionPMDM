@@ -1,5 +1,6 @@
 package com.example.practicaevaluacionpmdm
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.practicaevaluacionpmdm.databinding.ActivityInvitadoBinding
@@ -31,6 +32,10 @@ class InvitadoActivity : AppCompatActivity() {
     private fun ponerListeners() {
         binding.btnLogout.setOnClickListener {
             cerrarSesion()
+        }
+        binding.btnMapa2.setOnClickListener {
+            val i = Intent (this, PixabayActivity::class.java)
+            startActivity(i)
         }
     }
 
