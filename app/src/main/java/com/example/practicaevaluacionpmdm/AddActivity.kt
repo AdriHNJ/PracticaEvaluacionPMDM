@@ -3,9 +3,9 @@ package com.example.practicaevaluacionpmdm
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.practicaevaluacionpmdm.BaseDatos.AdministrarViajes
 import com.example.practicaevaluacionpmdm.databinding.ActivityAddBinding
-import com.example.practicaevaluacionpmdm.recycler.DatosViajes
+import com.example.sqllite_28_10_21.dataBase.AdministrarContactos
+import com.example.sqllite_28_10_21.recycler.DatosContactos
 
 class AddActivity : AppCompatActivity() {
     lateinit var binding: ActivityAddBinding
@@ -13,15 +13,14 @@ class AddActivity : AppCompatActivity() {
         binding = ActivityAddBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        setListeners()
+        setListernersBotones()
     }
 
-    private fun setListeners() {
+    private fun setListernersBotones() {
         binding.btnLimpiar.setOnClickListener{
-            binding.etAddOrigen.setText("")
-            binding.etAddDestino.setText("")
-            binding.etAddDistancia.setText("")
-            binding.etAddOrigen.requestFocus()
+            binding.etAddNombre.setText("")
+            binding.etAddEmail.setText("")
+            binding.etAddNombre.requestFocus()
         }
         binding.btnGuardar.setOnClickListener{
             guardarContacto()
@@ -29,25 +28,21 @@ class AddActivity : AppCompatActivity() {
     }
 
     private fun guardarContacto() {
-        val origen = binding.etAddOrigen.text.toString().trim()
-        val destino = binding.etAddDestino.text.toString().trim()
-        val distancia = binding.etAddDistancia.text.toString().trim()
-        if (origen.isEmpty()){
-            binding.etAddOrigen.setError("El nombre origen no puede estar vacío")
+        val nombre = binding.etAddNombre.text.toString().trim()
+        val email = binding.etAddEmail.text.toString().trim()
+        if (nombre.length<3){
+            binding.etAddNombre.setError("El nombre debe tener al menos 3 letras!!!")
             return
         }
-        if (destino.isEmpty()){
-            binding.etAddDestino.setError("Rellene este campo!!!")
+        if (email.isEmpty()){
+            binding.etAddEmail.setError("Rellene este campo!!!")
             return
         }
-        if (distancia.isEmpty()){
-            binding.etAddDistancia.setError("Rellene este campo!!!")
-            return
-        }
-        val esteContacto = DatosViajes(1, origen, destino, distancia.toInt())
-        val ac=AdministrarViajes()
-        ac.crearViaje(esteContacto)
-        Toast.makeText(this, "Viaje Guardado.", Toast.LENGTH_LONG).show()
+        val imagen="https://via.placeholder.com/150/0000FF/FFFFFF?text="+nombre.substring(0,3).uppercase()
+        val esteContacto = DatosContactos(1, nombre, email, imagen)
+        val ac= AdministrarContactos()
+        ac.crearContacto(esteContacto)
+        Toast.makeText(this, "Contacto Guardado.", Toast.LENGTH_LONG).show()
         onBackPressed()
     }
 }
